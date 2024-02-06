@@ -1,6 +1,6 @@
 # Steve's Keyboard Layout
 
-This is my 34-key keyboard layout.
+This is my 34-key keyboard layout. I use it daily on my [Fiðrildi](https://github.com/jstevej/fidrili) keyboard.
 
 ## Goals
   - fast, efficient, and natural (at least to me) typing for programming
