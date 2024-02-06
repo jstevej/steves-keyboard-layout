@@ -1,12 +1,12 @@
-# ButteredBread's Keyboard Layout
+# Steve's Keyboard Layout
 
 This is my 34-key keyboard layout.
 
 ## Goals
   - fast, efficient, and natural (at least to me) typing for programming
   - make common key combinations and layer activations bilateral
-  - easy left hand only operation for numbers, common shortcuts
-  - able to operate CAD programs and such without removing right hand from mouse
+  - easy left-hand-only operation for numbers, common shortcuts
+  - able to operate CAD programs and such without removing my right hand from the mouse
   - qwerty, but someone could easily modify it for other alpha layouts
 
 ## Principles and Features
@@ -17,7 +17,7 @@ This is my 34-key keyboard layout.
   - number pad lock
   - navigation keys
   - basic multimedia keys
-  - keys for adjusting keyboard LEDs, navigating keyboard LCD, etc.
+  - keys for adjusting keyboard LEDs, accessing keyboard features, etc.
 
 ## Overview
 
@@ -45,52 +45,53 @@ This is my 34-key keyboard layout.
 
 ## Base Layer, including Thumb Keys, Modifiers, and Combos
 
-I stuck with qwerty because I'm a touch typer, that's what I knew, and I wanted to benefit from my existing muscle memory. It should be pretty easy to adapt to other layouts.
+I stuck with qwerty because I'm a touch typer and wanted to benefit from my existing muscle memory. It should be easy to adapt to other layouts.
 
 When tapped, the thumb keys are (in order from left to right): backspace, tab, return, and space. Having backspace on the left hand is nice for CAD and drawing programs (it usually deletes the selected object).
 
-A disadvantage to using mod-tap is that you can't hold a key to repeat it. This is a nuisance with thumb keys, particularly space and backspace. As a workaround, the layers are designed so you can hold one of the thumb keys and then hold its mirror on the other side of the keyboard to get the repeat function.
+A disadvantage to using mod-tap is that you can't hold a key to repeat it. This is a nuisance with thumb keys, particularly space and backspace. As a workaround, you can hold one of the thumb keys and then hold its mirror on the other side of the keyboard to get the repeat function.
 
-I tried home row mods, but I'm a fast and sloppy typer, so I could never get them tuned well enough. I found that moving them to the bottom row helped a lot. The home row is often where the fastest and sloppiest typing happens, and the bottom row tends to be less used and slower. I was able to tune bottom row mods so that I don't get any incorrect activations, and my typing speed with shift isn't compromised.
+I tried home row mods, but I'm a fast and sloppy typer, and I couldn't get them tuned well enough. Moving them to the bottom row helped a lot. The home row is often where the fastest and sloppiest typing happens, and the bottom row tends to be less used and slower. I was able to tune bottom row mods so that I didn't get any incorrect activations and my typing speed with shift w\'t compromised.
 
-Speaking of shift, I put it on the bottom pinky keys on both hands. That's closest to where it is on a normal keyboard, which maybe helps me retain that muscle memory.
+Speaking of shift, I put it on the bottom pinky keys on both hands. That's closest to where it is on a standard keyboard, which may help me retain that muscle memory.
 
 I'm a vim user, so I need a good place for escape. The SD combo felt good for that.
 
 I'm a programmer, so I use caps word a lot. The KL combo felt good for that.
 
-When typing numbers, it is convenient to turn the left hand into a number pad, including calculator symbols and enter. The DF combo felt good for that.
+When typing numbers, I can turn the left hand into a number pad, including calculator symbols and enter. The DF combo felt good for that.
 
 ## Left and Right Symbol Layers
 
-I designed these layers based on ideas that made the symbol positions easy to remember, as well as what just felt natural. Some of the concepts are:
+I designed these layers based on ideas that made the symbol positions easy to remember and what felt natural. Some of the concepts are:
 
-- All paired brackets are on the same row and on the index and ring finger of each hand. This makes it conceptually easy to remember as well as fast to type when programming.
-- All the various quote/string characters are on the middle fingers between the brackets.
-- The `^` and `$` characters are at the beginning and end of the home row, respectively. This matches their use in regular expressions and in vim movement.
+- All paired brackets are on the same row and on the index and ring finger of each hand. This makes it conceptually easy to remember and fast to type when programming.
+- All the quote/string characters are on the middle fingers between the brackets.
+- The `^` and `$` characters are at the start and end of the home row, respectively. This matches their use in regular expressions and in vim movement.
 - All the calculator symbols (`+`, `-`, `*`, `/`, `=`) are on the left hand and duplicated on the number layer. This makes it possible to operate a calculator or type in spreadsheet formulae with just the left hand.
 - Comma and question mark are duplicated at the same position they have in the alpha layer.
-- I added a degree symbol, mostly used when typing oven temperatures for recipes.
+- I added a degree symbol, mainly used when typing recipe oven temperatures.
 - The remaining symbols went wherever they felt natural.
 
 All symbols are bilateral, meaning you hold down the layer key with the thumb of one hand and press the symbol with the fingers of the other hand.
 
-Special functions are assigned to the unilateral combinations of these layers.
 
-In the left symbol layer, the right hand keys activate keyboard functions:
+The unilateral combinations of these layers have special functions:
+
+In the left symbol layer, the right-hand keys activate keyboard functions:
   - `y`, `u`, `i`, and `o`: cycle the LED hue, decrease the LED value, increase the LED value, and cycle the LED mode; respectively
   - `h`: outputs the shrug symbols, `\_(ツ)_/¯`
   - `,`: prints custom debugging info in QMK console
   - `.`: enables QMK debug mode
   - `/`: clears the EEPROM
 
-In the right symbol layer, the left hand keys are a mirror of the right hand alphas. This is used for activating keyboard shortcuts while keeping the right hand on the mouse. Since using the mirrored alphas is a unilateral combination, some of the hand positions are awkward. To make it easier, the `a` key will one-shot the right symbol layer. I find it easier to type `backpspace-a, t` than `backspace-t`, for example.
+In the right symbol layer, the left-hand keys mirror the right-hand alphas. I use these for activating keyboard shortcuts while keeping the right hand on the mouse. Since using the mirrored alphas is a unilateral combination, some hand positions are awkward. To help make some of these combinations easier, the `a` key one-shots the right symbol layer. For example, I find it easier to type `backspace-a, t` than `backspace-t`.
 
 ## Left Number Layer
 
-The left number layer contains all the numbers, arranged in numpad-style, as well as the dot (`.`) and calculator symbols (`+`, `-`, `*`, `/`, `=`). This allows for typing numbers and formulae with the left hand. The left thumb keys retain their functions on this layer (backspace and tab). However, space and enter can be accessed on the left thumb keys by one-shotting the right symbol layer (still with the left hand). Yes, it is slightly cumbersome, but I don't need to use them that way often, and when I do, it is still easier than moving my hand from the mouse to the keyboard and back to the mouse. Note that the 0 is in the same position as `^` -- the beginning of the home row. This is nice because both are vim movement commands that take you to the beginning of the line or to the first character in the line.
+The left number layer contains all the numbers, arranged in numpad-style, as well as the dot (`.`) and calculator symbols (`+`, `-`, `*`, `/`, `=`). This allows for typing numbers and formulae with the left hand. The left thumb keys retain their functions on this layer (backspace and tab). However, space and enter can be accessed on the left thumb keys by one-shotting the right symbol layer (still with the left hand). Yes, it is slightly cumbersome, but I don't use them that way often, and when I do, it is still easier than moving my hand from the mouse to the keyboard and back to the mouse. Note that the 0 is in the same position as `^` -- the start of the home row. This is nice because both are vim movement commands that take you to the start of the line or to the first character in the line.
 
-There are currently no functions for the right hand keys on the left number layer.
+There are currently no functions for the right-hand keys on the left number layer.
 
 ## Right Navigation Layer
 
@@ -98,7 +99,7 @@ The right navigation layer contains the arrow keys in the `hjkl` arrangement. It
 
 I stuck the menu key on the bottom right, but I don't think I ever use it. There are a couple of unassigned keys that could be used for something else in the future.
 
-The left hand keys in this layer are assigned to the function keys using the same numpad-style layout of the number layer. I don't use function keys often, so having them be unilateral combinations is fine.
+The left-hand keys in this layer are assigned to the function keys using the same numpad-style layout of the number layer. I don't use function keys often, so having them be unilateral combinations is fine.
 
 ## References
 
